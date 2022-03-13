@@ -24,8 +24,6 @@ Amazon & Tecnológico de Monterrey
 - Budget for Kinesis and Connect Services
 - **Data Requirements**
 - Implement non-functional requirements
-- **Modify "Amazon S3 Storage" actor for "Storage and Data Upload Component"**
-- **Modify Video and Audio Recording System requirements** (Delete the part where you store recordings and just put Connect with Storage and Data Upload Component)
 - **Data Acquisition, Integrity, Retention, and Disposal**
 - **Architecture Diagram**
 - **Put a better description in communicated Interfaces**
@@ -344,13 +342,13 @@ In  this day and age, customer support is extremely important for any company.  
 
         | ID | SDCN1 |
         | --- | --- |
-        | Name |    |
-        | Description | |
-        | Scenery | |
-        | Exceptions | |
-        | Pre-conditions | |
+        | Name | Storage and Data Upload Component |
+        | Description | Definition of how this component will work. |
+        | Scenery | Voice and Screen recordings have been made and are in need of storage and categorization. |
+        | Exceptions | Voice and Screen recording has failed. |
+        | Pre-conditions |  A customer calls a Amazon Connect Client Call Center, and the Audio and Screen Recording Component has succesfully recorded and stored the customer's voice and the agent's screen. |
         | Post-Contitions| |
-        | Acceptance Criteria | |
+        | Acceptance Criteria | Recordings correctly stored and are available to be retrieved. |
 
     - **Dashboard View**
 
@@ -369,23 +367,23 @@ In  this day and age, customer support is extremely important for any company.  
 
         | ID | DCN1 |
         | --- | --- |
-        | Name |    |
-        | Description | |
-        | Scenery | |
-        | Exceptions | |
-        | Pre-conditions | |
+        | Name | Dashboard Component  |
+        | Description | Definition of how this component is going to work. |
+        | Scenery | A call center manager access our application platform with the right credentials. |
+        | Exceptions | The call center manager doesn't have the right credentials. |
+        | Pre-conditions | Both the Video and Audio Recording component and the Storage and Data Upload component are working correctly. |
         | Post-Contitions| |
-        | Acceptance Criteria | |
+        | Acceptance Criteria | The call center manager is able to interact with each video in the database. |
 
         | ID | DCN2-1 |
         | --- | --- |
-        | Name |    |
-        | Description | |
-        | Scenery | |
-        | Exceptions | |
-        | Pre-conditions | |
+        | Name | Retrieve merge video. |
+        | Description | Definition of how our dashboard component communicates with the Storage and Data Upload component to retrieve a specific video. |
+        | Scenery | A call center manager access our application platform with the right credentials. |
+        | Exceptions | The call center manager doesn't have the right credentials. |
+        | Pre-conditions | Both the Video and Audio Recording component and the Storage and Data Upload component are working correctly. |
         | Post-Contitions| |
-        | Acceptance Criteria | |
+        | Acceptance Criteria | The call center manager is able to interact with each video in the database. |
 
 - ### 14.2 Data Requirements
     - #### 14.2.1 Logical Data Model
