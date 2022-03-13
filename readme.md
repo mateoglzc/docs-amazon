@@ -223,13 +223,27 @@ In  this day and age, customer support is extremely important for any company.  
         
         Our application should be able to record the call center agent screen, gather the voice recording from a Amazon cConnect database and merge audio and video.
 
+        - **Description**
+        ![Video and Audio Screen Recording Component Use case level 0](./Diagrams/VACN1.png)
+        - **Stimulus/Response Sequence**
+        - **Functional Requirements**
+
+
     - **Storage and Data Upload**
 
         Our application should be able to store and upload data inside an Amazon Connect S3 Bucket. The data stored can be filtered by the used video metadata. (Tags, Day, Hour, etc.)
 
+        - **Description**
+        - **Stimulus/Response Sequence**
+        - **Functional Requirements**
+
     - **Dashboard View**
 
         Our application should be able to show and filter the catalog of recordings stored in our database. From this screen the administrator should be able to view, edit tags, review, and delete each video shown.
+
+        - **Description**
+        - **Stimulus/Response Sequence**
+        - **Functional Requirements**
 
 - ### 14.2 Data Requirements
     - #### 14.2.1 Logical Data Model
