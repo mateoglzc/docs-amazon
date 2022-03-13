@@ -19,15 +19,16 @@ Amazon & Tecnológico de Monterrey
 3
 
 # TO DO
-- [] Functional Requirements Table for all System Requirements
-- [] **Test Solutions** 
-- [] Endings
-- [] Budget for Kinesis and Connect Services
-- [] **Data Requirements**
-- [] Implement non-functional requirements
-- [] **Modify "Amazon S3 Storage" actor for "Storage and Data Upload Component"**
-- [] **Modify Video and Audio Recording System requirements** (Delete the part where you store recordings and just put Connect with Storage and Data Upload Component)
-- [] **Data Acquisition, Integrity, Retention, and Disposal**
+- **Test Solutions** 
+- Endings
+- Budget for Kinesis and Connect Services
+- **Data Requirements**
+- Implement non-functional requirements
+- **Modify "Amazon S3 Storage" actor for "Storage and Data Upload Component"**
+- **Modify Video and Audio Recording System requirements** (Delete the part where you store recordings and just put Connect with Storage and Data Upload Component)
+- **Data Acquisition, Integrity, Retention, and Disposal**
+- **Architecture Diagram**
+- **Put a better description in communicated Interfaces**
 
  
 
@@ -38,7 +39,7 @@ Amazon & Tecnológico de Monterrey
 3. [Scope Statement](#scope-statement)
 4. [Introduction](#introduction)
 5. [Description/Objectives](#description/objectives)
-6. [Governance Model (IN PROGRESS)](#governance-model)
+6. [Governance Model](#governance-model)
 7. [Budget/Costs](#budget/costs)
 8. [S.W.O.T](#s.w.o.t)
 9. [Justification](#justification)
@@ -46,7 +47,7 @@ Amazon & Tecnológico de Monterrey
 11. [Dependencies](#dependencies)
 12. [Risks](#risks)
 13. [Product Acceptance Criteria](#product-acceptance-criteria)
-14. [Business Requirements (IN PROGRESS)](#business-requirements)
+14. [Business Requirements](#business-requirements)
 - 14.1 [System Features](#system-features)
 - 14.2 [Data Requirements](#data-requirements)
 - 14.2.1 [Logical Data Model](#logical-data-model)
@@ -66,9 +67,9 @@ Amazon & Tecnológico de Monterrey
 - 14.5 [Internationalization and Localization Requirements](#internationalization-and-localization-requirements)
 15. [FlowChart](#flowchart)
 16. [Define & Design Solution](#define-&-design-solution)
-17. [Proposed Architecture (IN PROGRESS)](#proposed-architecture)
+17. [Proposed Architecture](#proposed-architecture)
 18. [Implementation Plan](#implementation-plan)
-19. [Test Solution (IN PROGRESS)](#test-solution)
+19. [Test Solution](#test-solution)
 - 19.1 [Objectives](#objectives)
 - 19.2 [Scope](#scope)
 - 19.3 [Requirements for Testing](#requirements-for-testing)
@@ -250,7 +251,7 @@ In  this day and age, customer support is extremely important for any company.  
             
             ![Merge Video and Audio Recordings Component Use case level 0](./Diagrams/MAVCN1.png)
             ![Merge Video and Audio Recordings Component Use case level 1](./Diagrams/MAVCN2-1.png)
-            ![Merge Video and Audio Recordings Component Use case level 2](./Diagrams/MAVCN3-1.png)
+            ![Merge Video and Audio Recordings Component Use case level 2](./Diagrams/MAVCN2-2.png)
 
         
         - **Stimulus/Response Sequence**
@@ -264,6 +265,67 @@ In  this day and age, customer support is extremely important for any company.  
             ![Merge Video and Audio Recordings Component Flow Diagram](./Diagrams/MAVFD1.png)
 
         - **Functional Requirements**
+
+        | ID | VACN1 |
+        | --- | --- |
+        | Name |  Global Screen and Audio Recording Component.  |
+        | Description | Defintion of top level functionality of this component.|
+        | Scenery | A customer calls a Amazon Connect Client Call Center. |
+        | Exceptions | Call Lasts less that 10 seconds. |
+        | Pre-conditions | Call Recieved. |
+        | Post-Contitions| Agents categorizes call. |
+        | Acceptance Criteria | Call Recieved and correctly started recording process. |
+
+        | ID | VACN2-1 |
+        | --- | --- |
+        | Name |  Voice Recording Detailed  |
+        | Description | Definition of how we use Amazon Connect to record a call. |
+        | Scenery | A customer calls a Amazon Connect Client Call Center. |
+        | Exceptions |  Call Lasts less that 10 seconds. |
+        | Pre-conditions | Call Recieved and correctly started recording process. |
+        | Post-Contitions| Audio Stored in S3 Storage and path sent to Amazon Amplify. |
+        | Acceptance Criteria | Voice recording correctly stored and path correctly sent to Amazon Amplify. |
+
+        | ID | VACN2-2 |
+        | --- | --- |
+        | Name |  Screen Recording Detailed  |
+        | Description | Definition of how we use the Screen Recording Component to record the agent's screen |
+        | Scenery | A customer calls a Amazon Connect Client Call Center. |
+        | Exceptions | Call Lasts less that 10 seconds. |
+        | Pre-conditions | Call Recieved and correctly started recording process. |
+        | Post-Contitions| Video Stored in S3 Storage and path sent to Amazon Amplify. |
+        | Acceptance Criteria | Screen recording correctly stored and path correctly sent to Amazon Amplify. |
+
+        | ID | MAVCN1 |
+        | --- | --- |
+        | Name | Merge Audio and Screen Recording Component |
+        | Description | Defintion of top level functionality of this component. |
+        | Scenery | Both Audio and Screen recordings have been correctly stored, and are ready to be merged. |
+        | Exceptions | Either Screen or Audio Recording is missing. |
+        | Pre-conditions | A call has been made and both Audio and Screen recordings have been correctly stored. |
+        | Post-Contitions| Storage must have sufficent space to store new recording. |
+        | Acceptance Criteria | New recording correctly merged. Audio and Screen synchronisation. |
+
+        | ID | MAVCN2-1 |
+        | --- | --- |
+        | Name |  Merge Audio and Video Screen Recording Architecture  |
+        | Description | Definition of the Amazon Service we are going to use for our component. |
+        | Scenery | Both Audio and Screen recordings have been correctly stored, and are ready to be merged. |
+        | Exceptions | Either Screen or Audio Recording is missing. |
+        | Pre-conditions | A call has been made and both Audio and Screen recordings have been correctly stored. |
+        | Post-Contitions| Storage must have sufficent space to store new recording. |
+        | Acceptance Criteria | New recording correctly merged. Audio and Screen synchronisation. |
+
+        | ID | MAVCN2-2 |
+        | --- | --- |
+        | Name | Merge Audio and Screen Recording Component Functionality  |
+        | Description | Definition of how the functionality of this component. |
+        | Scenery | Both Audio and Screen recordings have been correctly stored, and are ready to be merged. |
+        | Exceptions | Either Screen or Audio Recording is missing. |
+        | Pre-conditions | A call has been made and both Audio and Screen recordings have been correctly stored. |
+        | Post-Contitions| Storage must have sufficent space to store new recording. |
+        | Acceptance Criteria | New recording correctly merged. Audio and Screen synchronisation. |
+
 
 
     - **Storage and Data Upload**
@@ -280,6 +342,16 @@ In  this day and age, customer support is extremely important for any company.  
 
         - **Functional Requirements**
 
+        | ID | SDCN1 |
+        | --- | --- |
+        | Name |    |
+        | Description | |
+        | Scenery | |
+        | Exceptions | |
+        | Pre-conditions | |
+        | Post-Contitions| |
+        | Acceptance Criteria | |
+
     - **Dashboard View**
 
         Our application should be able to show and filter the catalog of recordings stored in our database. From this screen the administrator should be able to view, edit tags, review, and delete each video shown.
@@ -294,6 +366,26 @@ In  this day and age, customer support is extremely important for any company.  
         ![Dashboard Component Use Case Diagram](./Diagrams/DFD1.png)
 
         - **Functional Requirements**
+
+        | ID | DCN1 |
+        | --- | --- |
+        | Name |    |
+        | Description | |
+        | Scenery | |
+        | Exceptions | |
+        | Pre-conditions | |
+        | Post-Contitions| |
+        | Acceptance Criteria | |
+
+        | ID | DCN2-1 |
+        | --- | --- |
+        | Name |    |
+        | Description | |
+        | Scenery | |
+        | Exceptions | |
+        | Pre-conditions | |
+        | Post-Contitions| |
+        | Acceptance Criteria | |
 
 - ### 14.2 Data Requirements
     - #### 14.2.1 Logical Data Model
