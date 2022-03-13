@@ -408,6 +408,7 @@ In  this day and age, customer support is extremely important for any company.  
         - Call Center Agent
 
             **Topic Selection**
+        
         ![Call Center Agent's Screen](./Diagrams/AgentScreen.png)
     - #### 14.3.2 Software Interfaces
         - **Amazon Amplify**
