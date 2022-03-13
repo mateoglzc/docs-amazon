@@ -224,7 +224,22 @@ In  this day and age, customer support is extremely important for any company.  
         Our application should be able to record the call center agent screen, gather the voice recording from a Amazon cConnect database and merge audio and video.
 
         - **Description**
-        ![Video and Audio Screen Recording Component Use case level 0](./Diagrams/VACN1.png)
+            
+            For the fulfillment of this requirement, we will introduce two components:
+
+            **Video and Audio Recording Component**
+
+            ![Video and Audio Screen Recording Component Use case level 0](./Diagrams/VACN1.png)
+            ![Video and Audio Screen Recording Component Use case level 1.1](./Diagrams/VACN2-1.png)
+            ![Video and Audio Screen Recording Component Use case level 1.2](./Diagrams/VACN2-2.png)
+
+            **Merge Video and Audio Recording Component**
+            
+            ![Merge Video and Audio Recordings Component Use case level 0](./Diagrams/MAVCN1.png)
+            ![Merge Video and Audio Recordings Component Use case level 1](./Diagrams/MAVCN2-1.png)
+            ![Merge Video and Audio Recordings Component Use case level 2](./Diagrams/MAVCN3-1.png)
+
+        
         - **Stimulus/Response Sequence**
         - **Functional Requirements**
 
