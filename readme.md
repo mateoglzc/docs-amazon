@@ -241,6 +241,15 @@ In  this day and age, customer support is extremely important for any company.  
 
         
         - **Stimulus/Response Sequence**
+
+            **Video and Audio Recording Component**
+
+            ![Video and Audio Screen Recording Component Flow Diagram](./Diagrams/VAFD1.png)
+
+            **Merge Video and Audio Recording Component**
+
+            ![Merge Video and Audio Recordings Component Flow Diagram](./Diagrams/MAVFD1.png)
+
         - **Functional Requirements**
 
 
