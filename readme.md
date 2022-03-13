@@ -18,6 +18,19 @@ Amazon & Tecnológico de Monterrey
 ### Project Number:
 3
 
+# TO DO
+- [] Functional Requirements Table for all System Requirements
+- [] **Test Solutions** 
+- [] Endings
+- [] Budget for Kinesis and Connect Services
+- [] **Data Requirements**
+- [] Implement non-functional requirements
+- [] **Modify "Amazon S3 Storage" actor for "Storage and Data Upload Component"**
+- [] **Modify Video and Audio Recording System requirements** (Delete the part where you store recordings and just put Connect with Storage and Data Upload Component)
+- [] **Data Acquisition, Integrity, Retention, and Disposal**
+
+ 
+
 ## Content Table
 
 1. [Template Change History](#template-change-history)
@@ -34,38 +47,38 @@ Amazon & Tecnológico de Monterrey
 12. [Risks](#risks)
 13. [Product Acceptance Criteria](#product-acceptance-criteria)
 14. [Business Requirements (IN PROGRESS)](#business-requirements)
-- 14.1. [System Features](#system-features)
-- 14.2. [Data Requirements](#data-requirements)
-- 14.2.1. [Logical Data Model](#logical-data-model)
-- 14.2.2. [Data Dictionary](#data-dictionary)
-- 14.2.3. [Reports](#reports)
-- 14.2.4. [Data Acquisition, Integrity, Retention, and Disposal](#data-acquisition,-integrity,-retention,-and-disposal)
-- 14.3. [External Interface Requirements](#external-interface-requirements)
-- 14.3.1. [User Interfaces](#user-interfaces)
-- 14.3.2. [Software Interfaces](#software-interfaces)
-- 14.3.3. [Hardware Interfaces](#hardware-interfaces)
-- 14.3.4. [Communication Interfaces](#communication-interfaces)
-- 14.4. [Quality Attributes](#quality-attributes)
-- 14.4.1. [Usability](#usability)
-- 14.4.2. [Performance](#performance)
-- 14.4.3. [Security](#security)
-- 14.4.4. [Safety](#safety)
-- 14.5. [Internationalization and Localization Requirements](#internationalization-and-localization-requirements)
+- 14.1 [System Features](#system-features)
+- 14.2 [Data Requirements](#data-requirements)
+- 14.2.1 [Logical Data Model](#logical-data-model)
+- 14.2.2 [Data Dictionary](#data-dictionary)
+- 14.2.3 [Reports](#reports)
+- 14.2.4 [Data Acquisition, Integrity, Retention, and Disposal](#data-acquisition,-integrity,-retention,-and-disposal)
+- 14.3 [External Interface Requirements](#external-interface-requirements)
+- 14.3.1 [User Interfaces](#user-interfaces)
+- 14.3.2 [Software Interfaces](#software-interfaces)
+- 14.3.3 [Hardware Interfaces](#hardware-interfaces)
+- 14.3.4 [Communication Interfaces](#communication-interfaces)
+- 14.4 [Quality Attributes](#quality-attributes)
+- 14.4.1 [Usability](#usability)
+- 14.4.2 [Performance](#performance)
+- 14.4.3 [Security](#security)
+- 14.4.4 [Safety](#safety)
+- 14.5 [Internationalization and Localization Requirements](#internationalization-and-localization-requirements)
 15. [FlowChart](#flowchart)
 16. [Define & Design Solution](#define-&-design-solution)
 17. [Proposed Architecture (IN PROGRESS)](#proposed-architecture)
 18. [Implementation Plan](#implementation-plan)
 19. [Test Solution (IN PROGRESS)](#test-solution)
-- 19.1. [Objectives](#objectives)
-- 19.2. [Scope](#scope)
-- 19.3. [Requirements for Testing](#requirements-for-testing)
-- 19.4. [Dependencies](#dependencies)
-- 19.5. [Testing Strategy](#testing-strategy)
-- 19.6. [Testing Management Process](#testing-management-process)
-- 19.7. [Testing Environment](#testing-environment)
-- 19.8. [Testing Results](#testing-results)
-- 19.9. [Conclusions](#conclusions)
-- 19.10. [Appendix](#appendix)
+- 19.1 [Objectives](#objectives)
+- 19.2 [Scope](#scope)
+- 19.3 [Requirements for Testing](#requirements-for-testing)
+- 19.4 [Dependencies](#dependencies)
+- 19.5 [Testing Strategy](#testing-strategy)
+- 19.6 [Testing Management Process](#testing-management-process)
+- 19.7 [Testing Environment](#testing-environment)
+- 19.8 [Testing Results](#testing-results)
+- 19.9 [Conclusions](#conclusions)
+- 19.10 [Appendix](#appendix)
 20. [Endings](#endings)
 21. [Glossary of Term and Acronyms](#glossary-of-term-and-acronyms)
 
@@ -258,7 +271,13 @@ In  this day and age, customer support is extremely important for any company.  
         Our application should be able to store and upload data inside an Amazon Connect S3 Bucket. The data stored can be filtered by the used video metadata. (Tags, Day, Hour, etc.)
 
         - **Description**
+
+        ![Storage and Data Upload Component Use case Diagram Level 0](./Diagrams/SDCN1.png)
+
         - **Stimulus/Response Sequence**
+
+        ![Storage and Data Upload Component Flow Diagram](./Diagrams/SDFD1.png)
+
         - **Functional Requirements**
 
     - **Dashboard View**
@@ -266,7 +285,14 @@ In  this day and age, customer support is extremely important for any company.  
         Our application should be able to show and filter the catalog of recordings stored in our database. From this screen the administrator should be able to view, edit tags, review, and delete each video shown.
 
         - **Description**
+
+        ![Dashboard Component Use Case Diagram Level 0](./Diagrams/DCN1.png)
+        ![Dahsboard Component Use Case Diagram Level 1](./Diagrams/DCN2-1.png)
+        
         - **Stimulus/Response Sequence**
+
+        ![Dashboard Component Use Case Diagram](./Diagrams/DFD1.png)
+
         - **Functional Requirements**
 
 - ### 14.2 Data Requirements
@@ -274,6 +300,13 @@ In  this day and age, customer support is extremely important for any company.  
     - #### 14.2.2 Data Dictionary
     - #### 14.2.3 Reports
     - #### 14.2.4 Data Acquisition, Integrity, Retention, and Disposal
+    Data is going to be aquired through our application integration with various Amazon AWS Services such as: Amazon Connect, Amazon DynamoDB, Amazon Amplify, and many others. As estated above our application is divided in various components in which the data is going to be distributed. 
+    
+    **Example**
+    *Data will be acquired through the integration of Amazon Connect to the app using AWS RDS, of both the agent / supervisor and the recording of calls done by agents, as described within the above sections. By using a relational database, the application is able to keep track of all recordings without saturating the "recording" object itself by only storing the agentId within it, and keep agent data separate from it.*
+
+    *The necessary techniques to protect the app's data integrity are: backups of database; so that not all information is lost if any fatal error happens regarding the app, mirroring of all compressable software; which should always keep up with the latest release of the application and be used only when the backup fails, checkpointing of application; which provide the progress of the app trhough the course of the project to the stakeholders via its snapshots of each version released, and data accuracy verification; in order to be able to analyze all data recollected and remove any inconcistency that produces said error so that data quality is consistent.*
+
 - ### 14.3 External Interface Requirements
     - #### 14.3.1 User Interfaces
     - #### 14.3.2 Software Interfaces
