@@ -399,6 +399,16 @@ In  this day and age, customer support is extremely important for any company.  
 
 - ### 14.3 External Interface Requirements
     - #### 14.3.1 User Interfaces
+        - Call Center Manager
+
+            **Log In Screen**
+        ![Call Center Manager Log In](./Diagrams/ManagerLogIn.png)
+            **Dashboard**
+        ![Call Center Manager Dashboard](./Diagrams/ManagerDashboard.png)
+        - Call Center Agent
+
+            **Topic Selection**
+        ![Call Center Agent's Screen](./Diagrams/AgentScreen.png)
     - #### 14.3.2 Software Interfaces
         - **Amazon Amplify**
 
