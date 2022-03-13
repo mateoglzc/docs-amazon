@@ -348,15 +348,15 @@ Thanks to this architecture, it will be easier to develop our web application wi
 | 5.5                          | Final presentation                                      | Final presentation with Amazon                                                        | Every team member                               | 3/06/22      | 3/06/22    |          |
 
 ### 19. Test Solution
-    - ####  19.1 Objectives
-    - #### 19.2. [Scope](#scope)
-- 19.3. [Requirements for Testing](#requirements-for-testing)
-- 19.4. [Dependencies](#dependencies)
-- 19.5. [Testing Strategy](#testing-strategy)
-- 19.6. [Testing Management Process](#testing-management-process)
-- 19.7. [Testing Environment](#testing-environment)
-- 19.8. [Testing Results](#testing-results)
-- 19.9. [Conclusions](#conclusions)
-- 19.10. [Appendix](#appendix)
-20. [Endings](#endings)
-21. [Glossary of Term and Acronyms](#glossary-of-term-and-acronyms)
+- ####  19.1 Objectives
+- #### 19.2 Scope
+- #### 19.3 Requirements for Testing
+- #### 19.4 Dependencies
+- #### 19.5 Testing Strategy
+- #### 19.6 Testing Management Process
+- #### 19.7 Testing Environment
+- #### 19.8 Testing Results
+- #### 19.9 Conclusions
+- #### 19.10 Appendix
+### 20. Endings
+### 21. Glossary of Term and Acronyms
