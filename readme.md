@@ -153,15 +153,73 @@ For the development of this project our sponsor, Amazon, has given us 600 dollar
 
     **Our total monthly cost is 64.04.**
 
-8. [S.W.O.T](#s.w.o.t)
-9. [Justification](#justification)
-10. [Constraints](#constraints)
-11. [Dependencies](#dependencies)
-12. [Risks](#risks)
-13. [Product Acceptance Criteria](#product-acceptance-criteria)
-14. [Business Requirements (IN PROGRESS)](#business-requirements)
-- 14.1. [System Features](#system-features)
-- 14.2. [Data Requirements](#data-requirements)
+### 8. S.W.O.T
+
+- #### Strengths
+    - Experience making friendly UI
+    - Experience developing web applications
+    - Experience hosting web services
+- #### Weaknesses
+    - No Amazon API or Amazon services knowledge
+    - Never managed a team this big
+- #### Opportunities
+    - Ability to use Amazon API's and services to facilitate development
+    - Code Review
+    - Amazon support and supervision
+- #### Threats
+    - Poor communication with Amazon
+    - Surpass cost budget
+    - Poor time management
+
+### 9. Justification
+
+In  this day and age, customer support is extremely important for any company.  Amazon Connect is already helping their clients provide top of the line service to their customers, but as each company grows their clientele gets bigger and the necessity to hire call center agents increases. Our project aims to facilitate the training of these new call center agents by providing call center managers a platform to teach each agent with real world scenarios. This platform will facilitate and expedite training new agents assuring they maintain the quality of customer service experience. 
+
+
+### 10. Constraints
+
+- Amazon services exclusivity 
+- A 300 dollar budget for all Amazon services used during the development
+- Limited contact with Amazon representatives
+- A 10 week development period
+- A 5 week planning period
+
+### 11. Dependencies
+
+- Amazon services and API's
+
+### 12. Risks
+
+- Low Level Risks
+    - Exceed the expected database storage.
+    - Low video quality recordings.
+    - Unintelligable audio recordings.
+    - Exceeding budget cost estimate.
+
+- Medium Level Risks 
+    - Video Recordings not being saved properly.
+    - Data leaks.
+    - Failure to encrypt user information.
+
+- High Level Risks
+    - Failure to record screen recording.
+    - Failure to merge audio and video recodings.
+    - Choosing a wrong Amazon service to develop the solution.
+    - Incorrect management of users permissions.
+    - Sensitive data leak.
+
+
+### 13. Product Acceptance Criteria
+
+- The web app should only give access to the video catalog if the user is a call center manager.
+- The security implemented should recognize personal data. 
+- The recordings should download correctly into our databse following the tags given.
+- The call center manager should be able to see all the recordings that were made.
+
+
+### 14. Business Requirements
+- ### 14.1 System Features
+- 14.2 [Data Requirements](#data-requirements)
 - 14.2.1. [Logical Data Model](#logical-data-model)
 - 14.2.2. [Data Dictionary](#data-dictionary)
 - 14.2.3. [Reports](#reports)
