@@ -16,20 +16,20 @@ APD
 Amazon & Tecnológico de Monterrey
 
 ### Project Number:
-1
+3
 
 ## Content Table
 
-### [Template Change History](#template-change-history)
-### [General Project Information](#general-project-information)
-### [Scope Statement](#scope-statement)
-### [Introduction](#introduction)
-### [Description/Objectives](#description/objectives)
-### [Governance Model (IN PROGRESS)](#governance-model)
-### [Budget/Costs](#budget/costs)
-### [S.W.O.T](#s.w.o.t)
-### [Justification](#justification)
-### [Constraints](#constraints)
+1. [Template Change History](#template-change-history)
+2. [General Project Information](#general-project-information)
+3. [Scope Statement](#scope-statement)
+4. [Introduction](#introduction)
+5. [Description/Objectives](#description/objectives)
+6. [Governance Model (IN PROGRESS)](#governance-model)
+7. [Budget/Costs](#budget/costs)
+8. [S.W.O.T](#s.w.o.t)
+9. [Justification](#justification)
+10. [Constraints](#constraints)
 11. [Dependencies](#dependencies)
 12. [Risks](#risks)
 13. [Product Acceptance Criteria](#product-acceptance-criteria)
@@ -219,29 +219,138 @@ In  this day and age, customer support is extremely important for any company.  
 
 ### 14. Business Requirements
 - ### 14.1 System Features
-- 14.2 [Data Requirements](#data-requirements)
-- 14.2.1. [Logical Data Model](#logical-data-model)
-- 14.2.2. [Data Dictionary](#data-dictionary)
-- 14.2.3. [Reports](#reports)
-- 14.2.4. [Data Acquisition, Integrity, Retention, and Disposal](#data-acquisition,-integrity,-retention,-and-disposal)
-- 14.3. [External Interface Requirements](#external-interface-requirements)
-- 14.3.1. [User Interfaces](#user-interfaces)
-- 14.3.2. [Software Interfaces](#software-interfaces)
-- 14.3.3. [Hardware Interfaces](#hardware-interfaces)
-- 14.3.4. [Communication Interfaces](#communication-interfaces)
-- 14.4. [Quality Attributes](#quality-attributes)
-- 14.4.1. [Usability](#usability)
-- 14.4.2. [Performance](#performance)
-- 14.4.3. [Security](#security)
-- 14.4.4. [Safety](#safety)
-- 14.5. [Internationalization and Localization Requirements](#internationalization-and-localization-requirements)
-15. [FlowChart](#flowchart)
-16. [Define & Design Solution](#define-&-design-solution)
-17. [Proposed Architecture (IN PROGRESS)](#proposed-architecture)
-18. [Implementation Plan](#implementation-plan)
-19. [Test Solution (IN PROGRESS)](#test-solution)
-- 19.1. [Objectives](#objectives)
-- 19.2. [Scope](#scope)
+    - **Voice and Screen Recording**
+        
+        Our application should be able to record the call center agent screen, gather the voice recording from a Amazon cConnect database and merge audio and video.
+
+    - **Storage and Data Upload**
+
+        Our application should be able to store and upload data inside an Amazon Connect S3 Bucket. The data stored can be filtered by the used video metadata. (Tags, Day, Hour, etc.)
+
+    - **Dashboard View**
+
+        Our application should be able to show and filter the catalog of recordings stored in our database. From this screen the administrator should be able to view, edit tags, review, and delete each video shown.
+
+- ### 14.2 Data Requirements
+    - #### 14.2.1 Logical Data Model
+    - #### 14.2.2 Data Dictionary
+    - #### 14.2.3 Reports
+    - #### 14.2.4 Data Acquisition, Integrity, Retention, and Disposal
+- ### 14.3 External Interface Requirements
+    - #### 14.3.1 User Interfaces
+    - #### 14.3.2 Software Interfaces
+        - **Amazon Amplify**
+
+            Amazon Amplify serves as the heart of our application. Here our frontend and our backend is going to be hosted. Also, Amplify allows us to connect our app to Amazon lambda functions, Amazon S3 storage, and our Amazon DynamoDB database. 
+
+            Amazon Amplify allows us to connect all these services by using their CLI, and on top of that it let’s us create a continuous integration and continuous development workflow.
+
+            Through the Amplify API we will be able to connect all our application components with ease.
+        
+        - **Amazon Connect**
+
+            Amazon Connect is a critical component of our application because it connects us directly with the call center. Here we can see how calls are rooted, how agents interact with customers and most importantly it allows us to save the voice recording of the call into an S3 bucket instance. 
+
+        - **Amazon Lambda**
+
+            The Amazon Lambda API will serve as our merge component. Through this service and their respective API’s, we will be able to connect to Amazon Amplify and our storage hosted in Amazon S3. This completes a critical part in our business logic tier, which in this case will allow us to implement the appropriate solution.
+        
+        - **Amazon S3**
+
+            The Amazon S3 API component is going to allow the team to store the screen and audio recording files. This Amazon Component will be accessed through the business logic tier.
+
+        - **Amazon DynamoDB**
+
+            The Amazon DynamoDB will be used as our primary database. Here we will store all our business data, audio and video recording paths, tags, and reviews. This service API will help us to connect it to Amazon Amplify so all our app components can access this service with ease. 
+        
+        - **Amazon Cognito**
+
+            Amazon Cognito will serve as our authentication layer. It allows us to give access to the right people at the right time. With this, it gives our app an extra layer of security, assuring our clients that their information is secure.
+
+        - **Amazon Kinesis**
+
+            Amazon Kinesis plays an important role in our app, because it will allow us to start a screen recording as soon as a call is initiated. Through this service and their respective API, we will be able to connect it to Amazon Amplify and Amazon S3 which allows us to store and categorize the video recordings
+
+    - #### 14.3.3 Communication Interfaces
+
+        We will use HTTPS for all requests between amazon services and SSH for connecting to GitHub.
+
+- ### 14.4 Quality Attributes
+    - #### 14.4.1. Usability
+    - #### 14.4.2 Performance
+    - #### 14.4.3 Security
+    - #### 14.4.4 Safety
+- ### 14.5 Internationalization and Localization Requirements
+### 15. FlowChart
+### 16. Define & Design Solution
+For this project we have identified a set of critical components that allows us to test the overall performance of the system. These components are directly tied to our functional requirements, and testing them is a necessary step in assuring the quality of our development.
+
+These components are:
+- Screen Recording
+- Dashboard
+- Storage
+
+### 17. Proposed Architecture
+The chosen architecture for this project is the Layers Architecture, which will allow the team to implement this project by layers in such a way that the organization and distribution of the workload will be managed in the following layers:
+- **Presentation Tier:** Data visualization, User interface and interactions.
+- **Logic Tier:** Business logic layer.
+- **Data Tier:** Access and management of the database implemented in Amazon DynamoDB.
+
+Thanks to this architecture, it will be easier to develop our web application with a Model-View-Controller pattern allowing the implementation of a system of components with the desired frameworks. 
+
+### 18. Implementation Plan
+| ID                           | Name of Activity/Component                              | Description and notes                                                                 | Responsible                                     | Initial Date | End Date   | Dependencies   |
+| ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------ | ---------- | -------------- |
+| 1.1                          | Capture of business requirements                        | Remote session with Amazon  to capture business requirements                          | Every team member                               | 16/02/22     | 17/02/22   |                |
+| 1.2                          | Business Requirements Revision with Amazon              | Remote session with Amazon  to ask final questions about the business requirements    | Carolina Ortega                                 | 23/02/22     | 23/02/22   | 1.1            |
+| 1.3                          | Business Requirements Revision with Advisors (teachers) | Session with teachers to correct details                                              | Every team member                               | 7/03/22      | 11/03/22   | 1.1            |
+|                              | 
+
+
+**Presentation Tier Implementation (Front-end)**
+
+
+| ID                           | Name of Activity/Component                              | Description and notes                                                                 | Responsible                                     | Initial Date | End Date   | Dependencies   |
+| ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------ | ---------- | -------------- |
+| 2.1                          | User Interface Design                                   | Proposal design of app interfaces and navigation with Canva                           | Sebastián Juncos                                | 22/02/2022   | 22/02/22   | 1.3            |
+| 2.2                          | Start page interface                                    | Implementation of Start page interface                                                | Carolina Ortega                                 | 22/03/2022   | 28/03/2022 |                |
+| 2.3                          | Start/Stop and Save Recording component                 | Implementation of the screen recording tool with Angular                              | Matías Méndez                                   | 22/03/2022   | 08/04/22   |                |
+| 2.3                          | Admin interface to add video information                | Implementation of interface to edit the information of the stored videos with Angular | Ximena González                                 | 22/03/22     | 08/04/22   |                |
+| 2.5                          | Integration of all the components                       | Integration of all of the front-end components                                        | Every team member                               | 31/03/22     | 14/04/22   | 2.2 , 2.3,2.4  |
+| 2.6                          | Front-end testing                                       | Test all of the interface components                                                  | Mateo Gónzalez                                  | 14/04/22     | 18/04/22   | 2.5            |
+| 2.6                          | Team meeting                                            | Team meeting to discuss advances and areas of opportunity                             | Every team member                               | 6/04/22      | 6/04/22    |                |
+
+**Data Tier Implementation**
+
+| ID                           | Name of Activity/Component                              | Description and notes                                                                 | Responsible                                     | Initial Date | End Date   | Dependencies   |
+| ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------ | ---------- | -------------- |
+| 3.1                          | Database planning and design                            | Identify the required tables, relations, and columns for the database                 | Every team member                               | 22/03/22     | 23/03/22   |                |
+| 3.2                          | Database implementation                                 | Implement the design of the database with the desired language and server             | Carolina Ortega, Matías Méndez, Ximena Gonzalez | 24/03/22     | 29/03/22   | 3.1            |
+| 3.3                          | Database Testing                                        | Test the functionality of the database with the appropriate tools                     | Mateo Gonzalez and Sebastián Juncos             | 30/03/22     | 2/04/22    | 3.2            |
+| 3.4                          | Team meeting                                            | Team meeting to discuss advances and areas of opportunity                             | Every team member                               | 6/04/22      | 6/04/22    |                |
+
+
+**Back-end Tier Implementation**
+
+| ID                           | Name of Activity/Component                              | Description and notes                                                                 | Responsible                                     | Initial Date | End Date   | Dependencies   |
+| ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------ | ---------- | -------------- |
+| 4.1                          | API                                                     | API to connect the Front-end interaction with the database                            | Every team member                               | 19/04/22     | 25/04/22   | 3.3, 2.5       |
+| 4.2                          | API Testing                                             | Test the functionality of the API with the appropriate tools                          | Mateo Gonzalez and Sebastián Juncos             | 26/04/22     | 30/04/22   | 4.1            |
+| 4.3                          | Team meeting                                            | Team meeting to discuss advances and areas of opportunity                             | Every team member                               | 31/04/22     | 31/04/22   | 4.2            |
+
+Final stage
+
+| ID                           | Name of Activity/Component                              | Description and notes                                                                 | Responsible                                     | Initial Date | End Date   | Dependencies   |
+| ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------ | ---------- | -------------- |
+| 5.1                          | Complete integration of the application                 | Complete integration of backend, frontend and database.                               | Every team member | 01/05/22     | 10/05/22   | 4.1, 3.2, 2.5 |
+| 5.2                          | Testing of the complete application                     | Testing of all the components of the application                                      | Every team member | 11/05/22     | 20/05/22   | 5.1            |
+| 5.3                          | Final software revision                                 | Final software revision and correction with advisors and Amazon if possible           | Every team member                               | 21/05/22     | 30/05/22   | 5.1 , 5.2      |
+| 5.4                          | Team meeting                                            | Team meeting to discuss advances and areas of opportunity                             | Every team member                               | 31/05/22     | 31/05/22   |                |
+| 5.5                          | Final presentation                                      | Final presentation with Amazon                                                        | Every team member                               | 3/06/22      | 3/06/22    |          |
+
+### 19. Test Solution
+    - ####  19.1 Objectives
+    - #### 19.2. [Scope](#scope)
 - 19.3. [Requirements for Testing](#requirements-for-testing)
 - 19.4. [Dependencies](#dependencies)
 - 19.5. [Testing Strategy](#testing-strategy)
