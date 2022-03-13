@@ -453,6 +453,10 @@ In  this day and age, customer support is extremely important for any company.  
     - #### 14.4.4 Safety
 - ### 14.5 Internationalization and Localization Requirements
 ### 15. FlowChart
+- Call Center Manager's FlowChart
+![Call Center Manager's Flowchart](./Diagrams/ManagerFlowChart.jpg)
+- Call Center Agent's FlowChart
+![Call Center Agent's Flowchart](./Diagrams/AgentScreen.png)
 ### 16. Define & Design Solution
 For this project we have identified a set of critical components that allows us to test the overall performance of the system. These components are directly tied to our functional requirements, and testing them is a necessary step in assuring the quality of our development.
 
