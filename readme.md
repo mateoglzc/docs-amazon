@@ -304,7 +304,7 @@ Thanks to this architecture, it will be easier to develop our web application wi
 | 1.1                          | Capture of business requirements                        | Remote session with Amazon  to capture business requirements                          | Every team member                               | 16/02/22     | 17/02/22   |                |
 | 1.2                          | Business Requirements Revision with Amazon              | Remote session with Amazon  to ask final questions about the business requirements    | Carolina Ortega                                 | 23/02/22     | 23/02/22   | 1.1            |
 | 1.3                          | Business Requirements Revision with Advisors (teachers) | Session with teachers to correct details                                              | Every team member                               | 7/03/22      | 11/03/22   | 1.1            |
-|                              | 
+|
 
 
 **Presentation Tier Implementation (Front-end)**
@@ -338,7 +338,7 @@ Thanks to this architecture, it will be easier to develop our web application wi
 | 4.2                          | API Testing                                             | Test the functionality of the API with the appropriate tools                          | Mateo Gonzalez and Sebastián Juncos             | 26/04/22     | 30/04/22   | 4.1            |
 | 4.3                          | Team meeting                                            | Team meeting to discuss advances and areas of opportunity                             | Every team member                               | 31/04/22     | 31/04/22   | 4.2            |
 
-Final stage
+**Final stage**
 
 | ID                           | Name of Activity/Component                              | Description and notes                                                                 | Responsible                                     | Initial Date | End Date   | Dependencies   |
 | ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------ | ---------- | -------------- |
