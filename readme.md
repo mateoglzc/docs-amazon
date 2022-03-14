@@ -136,35 +136,36 @@ The merged recordings should be available to the call center manager by means of
 
 ### 7. Budget/Costs
 
-For the development of this project our sponsor, Amazon, has given us 600 dollars. Knowing that there will be two development groups working on a solution, **we have estimated that our budget is 300 dollars.** 
+For the development of this project our sponsor, Amazon, has given us 600 dollars. Knowing that there will be two development groups working on a solution, **we have estimated that our budget is 300 USD.** 
 
 - #### **Infrastructure**
     - Amazon Amplify
         
-        This service is charged by the amount of build minutes we are going to utilize, as well as how much data we will be storing and serving a month. We are estimating that at most our build time should be between 15 and 20 hours each month, and storing and serving about 1GB of data. **Our cost estimate is 12.17 dollars per month**.
+        This service is charged by the amount of build minutes we are going to utilize, as well as how much data we will be storing and serving a month. We are estimating that at most our build time should be between 15 and 20 hours each month, and storing and serving about 1GB of data. **Our cost estimate is 12.17 USD per month**.
     
     - Amazon DynamoDB
 
-        This service is charged by the amount of storage we are going to be using, as well as how many writes and reads we will do. Estimating we will be using about 25 GB of storage and making about a million consistent writes and read to our database, **our cost estimate is 7.75 dollars a month**.
+        This service is charged by the amount of storage we are going to be using, as well as how many writes and reads we will do. Estimating we will be using about 25 GB of storage and making about a million consistent writes and read to our database, **our cost estimate is 7.75 USD a month**.
 
     - Amazon S3 Storage
 
-        This service is charged by the amount of storage we are going to use to store our video and audio recordings. As well, we are charged for the amount of requests we make to this storage. This is one of the most critical components of our infrastructure, so estimating we would need about 1TB of storage a month, and about 20,000 requests per month. **Our cost estimate is 26.37 dollars per month.**
+        This service is charged by the amount of storage we are going to use to store our video and audio recordings. As well, we are charged for the amount of requests we make to this storage. This is one of the most critical components of our infrastructure, so estimating we would need about 1TB of storage a month, and about 20,000 requests per month. **Our cost estimate is 26.37 USD per month.**
 
     - Amazon Lambda
 
-        This service is charged by the amount requests and length of such requests we are going to make per month. Estimating we should be making around 10,000 requests a month, each one taking about 5 minutes to complete. **Our cost estimate is 17.75 dollars per month.**
+        This service is charged by the amount requests and length of such requests we are going to make per month. Estimating we should be making around 10,000 requests a month, each one taking about 5 minutes to complete. **Our cost estimate is 17.75 USD per month.**
 
     - Amazon Cognito
     
-        This service charges you for the amount of monthly active users are signing into your application. For the moment we are planning to use the free tier of this service that allows us to manage 50,000 active users. **Our cost estimate is 0 dollars per month.**
+        This service charges you for the amount of monthly active users are signing into your application. For the moment we are planning to use the free tier of this service that allows us to manage 50,000 active users. **Our cost estimate is 0 USD per month.**
 
     - Amazon Kinesis
+        This service is charged by the amount of streams made by minute, the charge is monthly. If we record and store 200 videos a month of size 1 MB, **Our cost estimate is 1 USD per month.**
 
     - Amazon Connect
+         This service is charged by minute, each minute costs 0.0070 USD. If we estimate 200 calls of 5 minutes each per month, **Our total monthly cost is 7 USD.**
 
-    **Our total monthly cost is 64.04.**
-
+**Our cost estimate is 72.04 USD per month.**
 ### 8. S.W.O.T
 
 - #### Strengths
