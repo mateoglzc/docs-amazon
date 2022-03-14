@@ -527,6 +527,9 @@ Thanks to this architecture, it will be easier to develop our web application wi
 
 ### 19. Test Solution
 - ####  19.1 Objectives
+
+    Our main objective in this section is to assure that during the development cycle we do not encounter a critical system errors that forces us to redefine or redevelop any component as this will be a setback during the development stage, while also assuring the quality of our application. We intend to achive this by following the Testing Strategy and Testing Process Management defined below.   
+
 - #### 19.2 Scope
 
     For this project we have identified a set of critical components that allows us to test the overall performance of the system. These components are directly tied to our functional requirements, and testing them is a necessary step in assuring the quality of our development.
@@ -540,12 +543,19 @@ Thanks to this architecture, it will be easier to develop our web application wi
 - #### 19.3 Requirements for Testing
 
     Que necesito para empezar a probar.
+    que se acabe la funcion
+    que se documente de manera correcte 
+    que sea el ambiente el ambiente correcto
+    que estemos en el mismo sprint de desarrollo
 
 - #### 19.4 Dependencies
 - #### 19.5 Testing Strategy
 
+Definir el proceso de pasar o no pasar cada prueba
+
     - Function Level Tests
         - Back Box Tests
+        Si definir bien el tipo de prueba que se va a realizar
     - Module Level Tests
         - Black Box Tests
         - White Box Tests
@@ -553,8 +563,10 @@ Thanks to this architecture, it will be easier to develop our web application wi
         - White Box Tests
         - High Definition Testing
 
+    En caso de que todo falle que hacer. 
+
 - #### 19.6 Testing Management Process
-    As stated above testing is a critical part is assuring our system quality. 
+    As stated above testing is a critical part is assuring our system quality, in this section. 
 
     - Informal Revision
 
@@ -570,9 +582,15 @@ Thanks to this architecture, it will be easier to develop our web application wi
 
 - #### 19.7 Testing Environment
 
+    Misma Vesion
+    Mismo vocabulario
+    Explicar como debe de ser formateado el input y el output 
 
 
 - #### 19.8 Testing Results
+
+    To be done in next development chapter.
+
 - #### 19.9 Conclusions
 - #### 19.10 Appendix
 ### 20. Endings
