@@ -528,10 +528,33 @@ Thanks to this architecture, it will be easier to develop our web application wi
 ### 19. Test Solution
 - ####  19.1 Objectives
 - #### 19.2 Scope
+
+    For this project we have identified a set of critical components that allows us to test the overall performance of the system. These components are directly tied to our functional requirements, and testing them is a necessary step in assuring the quality of our development.
+
+    These components are: 
+    - Screen and Audio Recordings
+    - Merge Screen and Audio Recordings
+    - Dashboard View
+    - Storage and Data Upload
+
 - #### 19.3 Requirements for Testing
 - #### 19.4 Dependencies
 - #### 19.5 Testing Strategy
 - #### 19.6 Testing Management Process
+    As stated above testing is a critical part is assuring our system quality. 
+
+    - Informal Revision
+
+        This will take place everytime a code function is completed. During this revision the developer assigned will only be performing black box tests. This revision does not require any documentation, but it is extremely important for the module that this function takes part to have all their internal functions informally revised. This is a requisite for the module to be considered for a Technical Revision. 
+
+    - Technical Revision
+
+        This will take place everytime a code module is completed. A team consisting of at least 3 or 5 internal members and 1 or 2 external members without surpassing the 6 total members, must meet to perform this revision. During it, mostly black box tests are meant to be done, but there is the possibiliy of making white box tests as well. For this revision it is necessary to fill out a document. This is extremly important because in order for the component that this module belongs to, it is necessary that every module that takes part of it has passed this revision.  
+
+    - Inspection
+
+        This will take place everytime a code component is completed. A tema consisting of at least 7 or 14 internal members and 1 or 2 external members without surpassing 15 total members, must meet to perform this revision. During it, mostly white box tests are meant to be done, but there is the possibility to performing other high definition tests. For this revision it is necessary to fill out a document. This is extremy important because in order to mark as our component completed and deployed it must have passed this revision. 
+
 - #### 19.7 Testing Environment
 - #### 19.8 Testing Results
 - #### 19.9 Conclusions
