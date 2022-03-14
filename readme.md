@@ -160,10 +160,12 @@ For the development of this project our sponsor, Amazon, has given us 600 dollar
         This service charges you for the amount of monthly active users are signing into your application. For the moment we are planning to use the free tier of this service that allows us to manage 50,000 active users. **Our cost estimate is 0 USD per month.**
 
     - Amazon Kinesis
+        
         This service is charged by the amount of streams made by minute, the charge is monthly. If we record and store 200 videos a month of size 1 MB, **Our cost estimate is 1 USD per month.**
 
     - Amazon Connect
-         This service is charged by minute, each minute costs 0.0070 USD. If we estimate 200 calls of 5 minutes each per month, **Our total monthly cost is 7 USD.**
+        
+        This service is charged by minute, each minute costs 0.0070 USD. If we estimate 200 calls of 5 minutes each per month, **Our total monthly cost is 7 USD.**
 
 **Our cost estimate is 72.04 USD per month.**
 ### 8. S.W.O.T
