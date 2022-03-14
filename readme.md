@@ -574,6 +574,9 @@ Thanks to this architecture, it will be easier to develop our web application wi
 
 - #### 19.8 Testing Results
 - #### 19.9 Conclusions
+
+At this stage of the project we comprehended and reflected about the basic and important requirements to be carried out, we have identified the objectives that our socio domador (in this case Amazon) has asked us to implement, and the initial stage has been completed. When we start developing the different parts like front-end and back-end of the web application, doubts will arise about the Amazon services and how we can use APIs and documentation, as well as what will be more functional and efficient to implement in the application.
+
 - #### 19.10 Appendix
 ### 20. Endings
 ### 21. Glossary of Term and Acronyms
