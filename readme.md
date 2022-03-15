@@ -549,11 +549,19 @@ Thanks to this architecture, it will be easier to develop our web application wi
 
 - #### 19.3 Requirements for Testing
 
-    Que necesito para empezar a probar.
-    que se acabe la funcion
-    que se documente de manera correcte 
-    que sea el ambiente el ambiente correcto
-    que estemos en el mismo sprint de desarrollo
+    Our testing requirements can be divided into 3 subsections
+    - Backend Testing
+    - Frontend Testing
+    - Overall Testing -> Testing Integration Process
+
+    The most common testing is going to be in both Frontend and Backend testing, as for the Overall testing, this will be done when a specific feature of our app is ready in both its Frontend and its Backend.
+
+    Our specific requirements are:
+    - We will be using a specific format for documenting our testing 
+    - Have a minimum RAM capacity in order to test our app
+    - Having the same version throughout the testing team in order to mantain testing performance
+    - All testers should have similar specs when it comes to hardware
+    - Developers must specify each testing input and output in detail, this will be shown as a comment in the code
 
 - #### 19.4 Dependencies
 - #### 19.5 Testing Strategy
