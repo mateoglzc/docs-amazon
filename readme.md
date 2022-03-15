@@ -395,11 +395,19 @@ In  this day and age, customer support is extremely important for any company.  
     - #### 14.2.4 Data Acquisition, Integrity, Retention, and Disposal
     Data is going to be aquired through our application integration with various Amazon AWS Services such as: Amazon Connect, Amazon DynamoDB, Amazon Amplify, and many others. As estated above our application is divided in various components in which the data is going to be distributed. 
     
+    
+    
    Data retention is identified as the service that keeps and stores safely certain information for a specified period of time. This service is very useful for businesses that have for example, a database where they store information of their clients throughout time and as a result businesses can analyze that data later on. It is important to specify that the storage of the information has to be stored according to the laws and regulations of the government as well as the industry sector.
 
     The decision of which data is going to be usable in the future is very important because if companies store too much unnecesary information there is a risk that the costs increase, to have less efficiency because the data is not filtered correctly and the security of the data might be in danger.
     
     It is imperative that every project that uses data retention, has data retention policies in which it says how the business is going to use the data that will be stores, if the data is protected and how, if the storage and data are secure and according to the law and how the data will be disposed after the limit time has passed.
+    
+   In other side, the necessary techniques to protect the app's data disposal are:
+
+- Clearing: Clearing removes data in such a way that prevents an end-user from easily recovering it. This method is suitable for reusing devices inside your organization.
+- Digital Shredding or Wiping: This method does not alter the physical asset. Instead, it overwrites data with other characters like 1 or 0 and random characters with multiple passes (e.g. DoD 5220.22-M algorithm).
+
 
 - ### 14.3 External Interface Requirements
     - #### 14.3.1 User Interfaces
