@@ -574,7 +574,7 @@ Thanks to this architecture, it will be easier to develop our web application wi
 - #### 19.4 Dependencies
 - #### 19.5 Testing Strategy
 
-Our testing strategy consists in various testing levels:
+    Our testing strategy consists in various testing levels:
     - Function Level
         - Tests whether each application feature works as per the software requirements.
     - Module Level
@@ -582,17 +582,17 @@ Our testing strategy consists in various testing levels:
     - Component Level
         - Test objects can be tested independently as components, without integrating with other components.
 
-For these testing levels, we will use either Black Box or White Box tests.
-Black box tests make sure of the functionality in these testing levels, wich means there is no attention to how the code works, as long as the result is the expected one.
-Black box tests will be used for Function and Module Levels.
+    For these testing levels, we will use either Black Box or White Box tests.
+    Black box tests make sure of the functionality in these testing levels, wich means there is no attention to how the code works, as long as the result is the expected one.
+    Black box tests will be used for Function and Module Levels.
 
-White box tests on the other hand, do focus on the way the conde is written without caring much for each testing result.
-White box tests will be used for Module and Component Levels.
+    White box tests on the other hand, do focus on the way the conde is written without caring much for each testing result.
+    White box tests will be used for Module and Component Levels.
 
-The normal flow of our testing process is:
-Informal Revision -> Technical Revision -> Inspection
+    The normal flow of our testing process is:
+    Informal Revision -> Technical Revision -> Inspection
 
-If any of these tests fail, we would take a step backwards to the previous testing stage, but if there's a case where technical revision fails two times, this component or module will be directly sent to inspection.
+    If any of these tests fail, we would take a step backwards to the previous testing stage, but if there's a case where technical revision fails two times, this component or module will be directly sent to inspection.
 
 - #### 19.6 Testing Management Process
     As stated above testing is a critical part is assuring our system quality, in this section. 
