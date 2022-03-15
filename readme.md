@@ -20,11 +20,13 @@ Amazon & Tecnológico de Monterrey
 
 # TO DO
 - **Test Solutions** 
+    = Dependencies
+    - Testing Strategy
+    - Testing Environment
+    - Testing Management Process Intro
+    - Appendix
 - Endings
-- Budget for Kinesis and Connect Services
 - **Data Requirements**
-- Implement non-functional requirements
-- **Data Acquisition, Integrity, Retention, and Disposal**
 - **Architecture Diagram**
 - **Put a better description in communicated Interfaces**
 
@@ -90,7 +92,7 @@ Amazon & Tecnológico de Monterrey
 ## General Project Information
 
 
-### 1. List of project Reviewers
+### 1. List of project Reviewers 
 
 | ID | Role | Name |
 | -------------- | --------------- | ----------- |
@@ -400,7 +402,7 @@ In  this day and age, customer support is extremely important for any company.  
    Data retention is identified as the service that keeps and stores safely certain information for a specified period of time. This service is very useful for businesses that have for example, a database where they store information of their clients throughout time and as a result businesses can analyze that data later on. It is important to specify that the storage of the information has to be stored according to the laws and regulations of the government as well as the industry sector.
 
     The decision of which data is going to be usable in the future is very important because if companies store too much unnecesary information there is a risk that the costs increase, to have less efficiency because the data is not filtered correctly and the security of the data might be in danger.
-    
+
     It is imperative that every project that uses data retention, has data retention policies in which it says how the business is going to use the data that will be stores, if the data is protected and how, if the storage and data are secure and according to the law and how the data will be disposed after the limit time has passed.
     
    In other side, the necessary techniques to protect the app's data disposal are:
@@ -618,3 +620,70 @@ At this stage of the project we comprehended and reflected about the basic and i
 - #### 19.10 Appendix
 ### 20. Endings
 ### 21. Glossary of Term and Acronyms
+
+# Front-end
+
+- Views
+ The interfaces that the user interacts with.
+- Filters
+ The categories that a video belongs to.
+- React
+ JavaScript library developed by Facebook to build Front-end interfaces.
+ 
+# Back-end
+- Web application
+
+
+ Software implementation that is rendered on web browsers
+ 
+- API 
+
+
+ A set of functions and procedures allowing the creation of applications that access the features or data of an operating system, application, or other service.
+- Audio and video merge
+
+ Software implementation where the video recorded by the web application is merged in a single file with the audio recorded by the Amazon service.
+ 
+# General
+- Concept model
+
+ Model used to organize and plan the management and distribution of data in the database. 
+ 
+- Scrum master
+
+
+ Main supervisor of the SCRUM methodology process who usually functions as the leader of the team development.
+ 
+- Sprint 
+
+
+ This is where ideas are turned into reality, usually there is a certain period of time (ex. 4-5 weeks) in which a part of the project is developed and as a result the value increments.
+ 
+- Backlog
+
+
+ The pending objectives to be achieved during a project that are usually attended and followed up during sprints.
+ 
+- Amazon Connect
+
+
+ Amazon platform that allows clients to attend their customers' needs through phone calls.
+ 
+- Amazon web service
+
+
+ It is a cloud platform from Amazon found on the internet and it offers different API’S and computing platforms to any client.
+ 
+- Black box testing
+
+
+ Tests that check the functional output of an implementation
+ 
+- White box testing 
+
+ Tests that check the outputs of each step.
+ 
+- Lambda 
+
+ This function evaluates an expression for a given argument.
+
