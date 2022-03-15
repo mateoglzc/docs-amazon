@@ -628,7 +628,7 @@ At this stage of the project we comprehended and reflected about the basic and i
 ### 20. Endings
 ### 21. Glossary of Term and Acronyms
 
-# Front-end
+#### Front-end
 
 - Views
  The interfaces that the user interacts with.
@@ -637,7 +637,7 @@ At this stage of the project we comprehended and reflected about the basic and i
 - React
  JavaScript library developed by Facebook to build Front-end interfaces.
  
-# Back-end
+#### Back-end
 - Web application
 
 
@@ -651,7 +651,7 @@ At this stage of the project we comprehended and reflected about the basic and i
 
  Software implementation where the video recorded by the web application is merged in a single file with the audio recorded by the Amazon service.
  
-# General
+#### General
 - Concept model
 
  Model used to organize and plan the management and distribution of data in the database. 
