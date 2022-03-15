@@ -20,11 +20,13 @@ Amazon & Tecnológico de Monterrey
 
 # TO DO
 - **Test Solutions** 
+    = Dependencies
+    - Testing Strategy
+    - Testing Environment
+    - Testing Management Process Intro
+    - Appendix
 - Endings
-- Budget for Kinesis and Connect Services
 - **Data Requirements**
-- Implement non-functional requirements
-- **Data Acquisition, Integrity, Retention, and Disposal**
 - **Architecture Diagram**
 - **Put a better description in communicated Interfaces**
 
@@ -90,7 +92,7 @@ Amazon & Tecnológico de Monterrey
 ## General Project Information
 
 
-### 1. List of project Reviewers
+### 1. List of project Reviewers 
 
 | ID | Role | Name |
 | -------------- | --------------- | ----------- |
@@ -398,7 +400,7 @@ In  this day and age, customer support is extremely important for any company.  
    Data retention is identified as the service that keeps and stores safely certain information for a specified period of time. This service is very useful for businesses that have for example, a database where they store information of their clients throughout time and as a result businesses can analyze that data later on. It is important to specify that the storage of the information has to be stored according to the laws and regulations of the government as well as the industry sector.
 
     The decision of which data is going to be usable in the future is very important because if companies store too much unnecesary information there is a risk that the costs increase, to have less efficiency because the data is not filtered correctly and the security of the data might be in danger.
-    
+
     It is imperative that every project that uses data retention, has data retention policies in which it says how the business is going to use the data that will be stores, if the data is protected and how, if the storage and data are secure and according to the law and how the data will be disposed after the limit time has passed.
 
 - ### 14.3 External Interface Requirements
