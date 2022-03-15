@@ -557,9 +557,9 @@ Thanks to this architecture, it will be easier to develop our web application wi
     Our testing requirements can be divided into 3 subsections
     - Backend Testing
     - Frontend Testing
-    - Overall Testing -> Testing Integration Process
+    - Overall Testing
 
-    The most common testing is going to be in both Frontend and Backend testing, as for the Overall testing, this will be done when a specific feature of our app is ready in both its Frontend and its Backend.
+    The most common testing is going to be in both Frontend and Backend testing; as for the Overall testing, this means the integration of both Frontend and Backend sections to fully finish either a function, module or component. We could call Overall testing as the Testing integration process
 
     Our specific requirements are:
     - We will be using a specific format for documenting our testing 
@@ -571,19 +571,25 @@ Thanks to this architecture, it will be easier to develop our web application wi
 - #### 19.4 Dependencies
 - #### 19.5 Testing Strategy
 
-Definir el proceso de pasar o no pasar cada prueba
+Our testing strategy consists in various testing levels:
+    - Function Level
+        - Tests whether each application feature works as per the software requirements.
+    - Module Level
+        - Tests each unit of these modules, we can say that it tests the smaller building blocks of the program.
+    - Component Level
+        - Test objects can be tested independently as components, without integrating with other components.
 
-    - Function Level Tests
-        - Back Box Tests
-        Si definir bien el tipo de prueba que se va a realizar
-    - Module Level Tests
-        - Black Box Tests
-        - White Box Tests
-    - Component Level Tests
-        - White Box Tests
-        - High Definition Testing
+For these testing levels, we will use either Black Box or White Box tests.
+Black box tests make sure of the functionality in these testing levels, wich means there is no attention to how the code works, as long as the result is the expected one.
+Black box tests will be used for Function and Module Levels.
 
-    En caso de que todo falle que hacer. 
+White box tests on the other hand, do focus on the way the conde is written without caring much for each testing result.
+White box tests will be used for Module and Component Levels.
+
+The normal flow of our testing process is:
+Informal Revision -> Technical Revision -> Inspection
+
+If any of these tests fail, we would take a step backwards to the previous testing stage, but if there's a case where technical revision fails two times, this component or module will be directly sent to inspection.
 
 - #### 19.6 Testing Management Process
     As stated above testing is a critical part is assuring our system quality, in this section. 
