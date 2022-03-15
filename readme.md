@@ -632,28 +632,58 @@ At this stage of the project we comprehended and reflected about the basic and i
  
 # Back-end
 - Web application
+
+
  Software implementation that is rendered on web browsers
+ 
 - API 
+
+
  A set of functions and procedures allowing the creation of applications that access the features or data of an operating system, application, or other service.
 - Audio and video merge
+
  Software implementation where the video recorded by the web application is merged in a single file with the audio recorded by the Amazon service.
+ 
 # General
 - Concept model
+
  Model used to organize and plan the management and distribution of data in the database. 
+ 
 - Scrum master
+
+
  Main supervisor of the SCRUM methodology process who usually functions as the leader of the team development.
+ 
 - Sprint 
+
+
  This is where ideas are turned into reality, usually there is a certain period of time (ex. 4-5 weeks) in which a part of the project is developed and as a result the value increments.
+ 
 - Backlog
+
+
  The pending objectives to be achieved during a project that are usually attended and followed up during sprints.
+ 
 - Amazon Connect
+
+
  Amazon platform that allows clients to attend their customers' needs through phone calls.
+ 
 - Amazon web service
+
+
  It is a cloud platform from Amazon found on the internet and it offers different API’S and computing platforms to any client.
+ 
 - Black box testing
+
+
  Tests that check the functional output of an implementation
+ 
 - White box testing 
+
  Tests that check the outputs of each step.
+ 
 - Lambda 
+
  This function evaluates an expression for a given argument.
 
