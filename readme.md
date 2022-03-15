@@ -622,9 +622,14 @@ At this stage of the project we comprehended and reflected about the basic and i
 ### 21. Glossary of Term and Acronyms
 
 # Front-end
-Views: The interfaces that the user interacts with.
-Filters: The categories that a video belongs to.
-React: JavaScript library developed by Facebook to build Front-end interfaces.
+
+- Views
+ The interfaces that the user interacts with.
+- Filters
+ The categories that a video belongs to.
+- React
+ JavaScript library developed by Facebook to build Front-end interfaces.
+ 
 # Back-end
 Web application: Software implementation that is rendered on web browsers
 API: A set of functions and procedures allowing the creation of applications that access the features or data of an operating system, application, or other service.
