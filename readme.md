@@ -392,6 +392,7 @@ In  this day and age, customer support is extremely important for any company.  
 
 - ### 14.2 Data Requirements
     - #### 14.2.1 Logical Data Model
+    ![Class diagram with components](./Diagrams/diagrama_clases.png)
     - #### 14.2.2 Data Dictionary
     - #### 14.2.3 Reports
     - #### 14.2.4 Data Acquisition, Integrity, Retention, and Disposal
