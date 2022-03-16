@@ -694,6 +694,10 @@ version 2
 
 - #### 19.10 Appendix
 
+- Minutas:
+
+https://docs.google.com/document/d/1YVaDb1OCT77fJ3wEzoixPjSeQdUWo7MZLTo0cw4uvn8/edit?usp=sharing
+
 ### 20. Endings
 
 It is not possible to conclude anything by now since the implementation have not been started. However what should be analyzed is the performance of each developed component and its results. 
