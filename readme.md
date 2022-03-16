@@ -395,8 +395,8 @@ In  this day and age, customer support is extremely important for any company.  
     ![Class diagram with components](./Diagrams/diagrama_clases.png)
     - #### 14.2.2 Data Dictionary
 
-| AUDIO |
-        | --- | --- |
+        | AUDIO |
+        | --- |
         | ID| Identifier    |
         | path | Path to the service where the file is stored.|
         | agent_name | Name of agent. |
@@ -405,8 +405,8 @@ In  this day and age, customer support is extremely important for any company.  
         | review| Rating review from 1-5. |
         | date | Date of the audio. |
 
-| VIDEO |
-        | --- | --- |
+        | VIDEO |
+        | --- |
         | ID| Identifier    |
         | path | Path to the service where the file is stored.|
         | agent_name | Name of agent. |
@@ -415,8 +415,8 @@ In  this day and age, customer support is extremely important for any company.  
         | review| Rating review from 1-5. |
         | date | Date of the video. |
 
-| MERGED RECORDINGS |
-        | --- | --- |
+        | MERGED RECORDINGS |
+        | --- |
         | ID| Identifier    |
         | path | Path to the service where the file is stored.|
         | agent_name | Name of agent. |
