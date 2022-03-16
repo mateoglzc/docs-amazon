@@ -394,6 +394,38 @@ In  this day and age, customer support is extremely important for any company.  
     - #### 14.2.1 Logical Data Model
     ![Class diagram with components](./Diagrams/diagrama_clases.png)
     - #### 14.2.2 Data Dictionary
+
+| AUDIO |
+        | --- | --- |
+        | ID| Identifier    |
+        | path | Path to the service where the file is stored.|
+        | agent_name | Name of agent. |
+        | agent_role | Role of agent. |
+        | topic | Topic of the audio. |
+        | review| Rating review from 1-5. |
+        | date | Date of the audio. |
+
+| VIDEO |
+        | --- | --- |
+        | ID| Identifier    |
+        | path | Path to the service where the file is stored.|
+        | agent_name | Name of agent. |
+        | agent_role | Role of agent. |
+        | topic | Topic of the video. |
+        | review| Rating review from 1-5. |
+        | date | Date of the video. |
+
+| MERGED RECORDINGS |
+        | --- | --- |
+        | ID| Identifier    |
+        | path | Path to the service where the file is stored.|
+        | agent_name | Name of agent. |
+        | agent_role | Role of agent. |
+        | topic | Topic of the recording. |
+        | review| Rating review from 1-5. |
+        | date | Date of the service given. |
+
+
     - #### 14.2.3 Reports
     - #### 14.2.4 Data Acquisition, Integrity, Retention, and Disposal
     Data is going to be aquired through our application integration with various Amazon AWS Services such as: Amazon Connect, Amazon DynamoDB, Amazon Amplify, and many others. As estated above our application is divided in various components in which the data is going to be distributed. 
