@@ -22,7 +22,6 @@ Amazon & Tecnológico de Monterrey
 - **Test Solutions** 
     - Dependencies
     - Appendix
-- **Architecture Diagram** ->Juncos
 
  
 
@@ -487,6 +486,8 @@ In  this day and age, customer support is extremely important for any company.  
     - #### 14.3.3 Communication Interfaces
 
         For communicating between the Amazon services, Amazon SQS will be used, as queuing service, wich can easily help us move information between AWS. SQS uses JSON as a way of interpreting data, therefore, JSON will be the way data moves within our application.
+
+        ![Architecture Diagram](./Diagrams/ArchitectureDiagram.png)
 
 - ### 14.4 Quality Attributes
     - #### 14.4.1. Usability
