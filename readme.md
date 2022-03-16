@@ -627,6 +627,20 @@ version 2
     - Developers must specify each testing input and output in detail, this will be shown as a comment in the code
 
 - #### 19.4 Dependencies
+  
+
+
+| ID    | Name of Activity/Component                              | Description and notes                                                                  | Responsible       | Initial Date | End Date    | Depende ncies |
+| ----- | ------------------------------------------------------- | -------------------------------------------------------------------------------------- | ----------------- | ------------ | ----------- | ------------- |
+| 1\. 1 | Capture of business requirements                        | Remote session with Amazon to capture business requirements                            | Every team member | Week 1       | Week 1      |               |
+| 1\. 2 | Business Requirements Revision with Amazon              | Remote session with Amazon to ask final questions about the business requirements      | Carolina Ortega   | 23/02/22     | 23/02/22    | 1.1           |
+| 1\. 3 | Business Requirements Revision with Advisors (teachers) | Session with teachers to correct details                                               | Every team member | 7/03/22      | 11/03/22    | 1.1           |
+|       | Presentation Tier Implementation (Front-end)            |                                                                                        |
+| 2\. 1 | User Interface Design                                   | Proposal design of app interfaces and navigation with Canva                            | Sebastián Juncos | 22/02/20 22  | 22/02/22    | 1.3           |
+| 2\. 2 | Start page interface                                    | Implementatio n of Start page interface                                                | Carolina Ortega   | 22/03/20 22  | 28/03/202 2 |               |
+| 2\. 3 | Start/Stop and Save Recording component                 | Implementatio n of the screen recording tool with Angular                              | Matías Méndez   | 22/03/20 22  | 08/04/22    |               |
+| 2\. 3 | Admin interface to add video information                | Implementatio n of interface to edit the information of the stored videos with Angular | Ximena González  | 22/03/22     | 08/04/22    |               |
+| 2\. 5 | Integration of all the components                       | Integration of all of the front-end                                                    | Every team member | 31/03/22     | 14/04/22    | 2.2 , 2.3,2.4 |
 - #### 19.5 Testing Strategy
 
     Our testing strategy consists in various testing levels:
