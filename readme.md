@@ -524,6 +524,7 @@ The chosen architecture for this project is the Layers Architecture, which will 
 Thanks to this architecture, it will be easier to develop our web application with a Model-View-Controller pattern allowing the implementation of a system of components with the desired frameworks. 
 
 ### 18. Implementation Plan
+version 1
 | ID                           | Name of Activity/Component                              | Description and notes                                                                 | Responsible                                     | Initial Date | End Date   | Dependencies   |
 | ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------ | ---------- | -------------- |
 | 1.1                          | Capture of business requirements                        | Remote session with Amazon  to capture business requirements                          | Every team member                               | 16/02/22     | 17/02/22   |                |
@@ -571,6 +572,34 @@ Thanks to this architecture, it will be easier to develop our web application wi
 | 5.3                          | Final software revision                                 | Final software revision and correction with advisors and Amazon if possible           | Every team member                               | 21/05/22     | 30/05/22   | 5.1 , 5.2      |
 | 5.4                          | Team meeting                                            | Team meeting to discuss advances and areas of opportunity                             | Every team member                               | 31/05/22     | 31/05/22   |                |
 | 5.5                          | Final presentation                                      | Final presentation with Amazon                                                        | Every team member                               | 3/06/22      | 3/06/22    |          |
+
+version 2
+|     id     | Name                             | Description                                                                   | Start date | End date | Dependencies |
+|:----------:|----------------------------------|-------------------------------------------------------------------------------|------------|----------|--------------|
+|  Back end  |                                  |                                                                               |            |          |              |
+| 1          | Get recording data               |                                                                               |            |          |              |
+| 1.1        | Start screen recording           | Start recording using Amazon Chime                                            | 1st week   | 3rd week | 1.3          |
+| 1.2        | Stop recording when call ends    | Stop Amazon Chime and store S3 URL of both recordings (video, audio)          | 1st week   | 3rd week | 1.3, 1.1     |
+| 1.3        | Get recording info               | Send both urls and call info to back end                                      | 1st week   | 3rd week |              |
+| 2          | Merge Audio and Video            |                                                                               |            |          |              |
+| 2.1        | Get video and call               | Store the video and voice recording locally                                   | 4th week   | 4th week |              |
+| 2.2        | Merge locally                    | Merge the video and voice into a single file (.mp4)                           | 4th week   | 4th week | 2.1          |
+| 2.3        | Upload video                     | Send the new video to S3 and store that new video’s URL                       | 4th week   | 4th week | 2.2          |
+| 3          | Upload to database               |                                                                               |            |          |              |
+| 3.1        | Create database entry            | Store recording information (video URL, agent’s name, length, topic)          | 5th week   | 6th week |              |
+| 3.2        | Send query                       | Send query to database with new entry                                         | 5th week   | 6th week | 3.2          |
+| 4          | Make available for administrator |                                                                               |            |          |              |
+| 4.1        | Make database get request        | Make get request to load all videos on dashboard                              | 7th week   | 9th week |              |
+| 4.2        | Send user to video               | Make a get request to get S3 video URL, then do post request to display video | 7th week   | 9th week | 4.1          |
+| Front end  |                                  |                                                                               |            |          |              |
+| 5          | End call                         |                                                                               |            |          |              |
+| 5.1        | Display alert on browser         | Show a page where the agent can select the topic the call was about           | 3rd week   | 3rd week |              |
+| 5.2        | Show upload complete             | Display a message that the call data was uploaded to the database             | 3rd week   | 3rd week | 5.1          |
+| 6          | Administrator view               |                                                                               |            |          |              |
+| 6.1        | Display all videos               | Show all videos that exist in the database                                    | 7th week   | 9th week |              |
+| 6.2        | Filter videos                    | Apply a filter to view (topic, rating, date)                                  | 7th week   | 9th week | 6.1          |
+| 6.3        | Review videos                    | Add a review to videos (store it in the database)                             | 7th week   | 9th week | 6.1          |
+| 6.4        | Delete videos                    | Delete videos from database                                                   | 7th week   | 9th week | 6.1          |
 
 ### 19. Test Solution
 - ####  19.1 Objectives
