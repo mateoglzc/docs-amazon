@@ -20,15 +20,11 @@ Amazon & Tecnológico de Monterrey
 
 # TO DO
 - **Test Solutions** 
-    = Dependencies
-    - Testing Strategy
-    - Testing Environment
-    - Testing Management Process Intro
+    - Dependencies
+    - Testing Environment -> Juncos
     - Appendix
-- Endings
-- **Data Requirements**
-- **Architecture Diagram**
-- **Put a better description in communicated Interfaces**
+- **Architecture Diagram** -> no se qpd
+- **Put a better description in communicated Interfaces** -> no se qpd
 
  
 
@@ -656,8 +652,7 @@ version 2
     If any of these tests fail, we would take a step backwards to the previous testing stage, but if there's a case where technical revision fails two times, this component or module will be directly sent to inspection.
 
 - #### 19.6 Testing Management Process
-    As stated above testing is a critical part is assuring our system quality, in this section. 
-
+   
     - Informal Revision
 
         This will take place everytime a code function is completed. During this revision the developer assigned will only be performing black box tests. This revision does not require any documentation, but it is extremely important for the module that this function takes part to have all their internal functions informally revised. This is a requisite for the module to be considered for a Technical Revision. 
@@ -688,7 +683,8 @@ version 2
 - #### 19.10 Appendix
 
 ### 20. Endings
- It is not possible to conclude anything by now since the implementation have not been started. However what should be analyzed is the performance of each developed component and its results. 
+    It is not possible to conclude anything by now since the implementation have not been started. However what should be analyzed is the performance of each developed component and its results. 
+    Even though we can not conclude anything, we expect the best based on our solution and our thorough description of it.
 ### 21. Glossary of Term and Acronyms
 
 - #### Front-end
