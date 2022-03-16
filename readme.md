@@ -18,11 +18,6 @@ Amazon & Tecnológico de Monterrey
 ### Project Number:
 3
 
-# TO DO
-- **Test Solutions** 
-    - Dependencies
-    - Appendix
-
  
 
 ## Content Table
