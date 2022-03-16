@@ -23,8 +23,8 @@ Amazon & Tecnológico de Monterrey
     - Dependencies
     - Testing Environment -> Juncos
     - Appendix
-- **Architecture Diagram** -> no se qpd
-- **Put a better description in communicated Interfaces** -> no se qpd
+- **Architecture Diagram** ->Juncos
+- **Put a better description in communicated Interfaces** -> Juncos
 
  
 
@@ -488,7 +488,7 @@ In  this day and age, customer support is extremely important for any company.  
 
     - #### 14.3.3 Communication Interfaces
 
-        We will use HTTPS for all requests between amazon services and SSH for connecting to GitHub.
+        JSON, messaging system sns sqs
 
 - ### 14.4 Quality Attributes
     - #### 14.4.1. Usability
