@@ -645,5 +645,36 @@ Definir el proceso de pasar o no pasar cada prueba
 At this stage of the project we comprehended and reflected about the basic and important requirements to be carried out, we have identified the objectives that our socio domador (in this case Amazon) has asked us to implement, and the initial stage has been completed. When we start developing the different parts like front-end and back-end of the web application, doubts will arise about the Amazon services and how we can use APIs and documentation, as well as what will be more functional and efficient to implement in the application.
 
 - #### 19.10 Appendix
+ **Revisión Técnica**
+ | Personas que realizaron la revisión (internos): |   |   |   |   |   |
+|:-----------------------------------------------:|:-:|:-:|:-:|:-:|:-:|
+|                                                 |   |   |   |   |   |
+
+
+| Personas que realizaron la revisión (externos): |   |   |   |   |   |
+|:-----------------------------------------------:|:-:|:-:|:-:|:-:|:-:|
+|                                                 |   |   |   |   |   |
+
+| Personas que realizaron la revisión (internos): |   |   |   |   |   |
+|:-----------------------------------------------:|:-:|:-:|:-:|:-:|:-:|
+|                                                 |   |   |   |   |   |
+
+**Conclusiones de la revisión**
+
+Estatus final:
+
+*Inspección:*
+| Personas que realizaron la revisión (internos): |   |   |   |   |   |
+|:-----------------------------------------------:|:-:|:-:|:-:|:-:|:-:|
+|                                                 |   |   |   |   |   |
+| Personas que realizaron la revisión (externos): |   |   |   |   |   |
+|                                                 |   |   |   |   |   |
+
+| id de prueba | nombre prueba | Tipo de prueba | Descripción | Id revisión | status |
+|--------------|---------------|----------------|-------------|-------------|--------|
+|              |               |                |             |             |        |
+|              |               |                |             |             |        |
+|              |               |                |             |             |        |
+ 
 ### 20. Endings
 ### 21. Glossary of Term and Acronyms
