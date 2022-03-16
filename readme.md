@@ -422,6 +422,8 @@ In  this day and age, customer support is extremely important for any company.  
 
     - #### 14.2.3 Reports
     - #### 14.2.4 Data Acquisition, Integrity, Retention, and Disposal
+
+
     Data is going to be aquired through our application integration with various Amazon AWS Services such as: Amazon Connect, Amazon DynamoDB, Amazon Amplify, and many others. As estated above our application is divided in various components in which the data is going to be distributed. 
     
     
@@ -701,10 +703,18 @@ Even though we can not conclude anything, we expect the best based on our soluti
 - #### Front-end
 
     - Views
+
+
         The interfaces that the user interacts with.
+        
     - Filters
+
+
         The categories that a video belongs to.
+        
     - React
+
+
         JavaScript library developed by Facebook to build Front-end interfaces.
     
 - #### Back-end
