@@ -396,7 +396,7 @@ In  this day and age, customer support is extremely important for any company.  
     - #### 14.2.2 Data Dictionary
 
         | AUDIO |
-        | --- |
+        | --- | --- |
         | ID| Identifier    |
         | path | Path to the service where the file is stored.|
         | agent_name | Name of agent. |
@@ -406,7 +406,7 @@ In  this day and age, customer support is extremely important for any company.  
         | date | Date of the audio. |
 
         | VIDEO |
-        | --- |
+        | --- | --- |
         | ID| Identifier    |
         | path | Path to the service where the file is stored.|
         | agent_name | Name of agent. |
@@ -416,7 +416,7 @@ In  this day and age, customer support is extremely important for any company.  
         | date | Date of the video. |
 
         | MERGED RECORDINGS |
-        | --- |
+        | --- | --- |
         | ID| Identifier    |
         | path | Path to the service where the file is stored.|
         | agent_name | Name of agent. |
