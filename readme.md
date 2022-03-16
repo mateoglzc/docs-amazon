@@ -21,10 +21,8 @@ Amazon & Tecnológico de Monterrey
 # TO DO
 - **Test Solutions** 
     - Dependencies
-    - Testing Environment -> Juncos
     - Appendix
 - **Architecture Diagram** ->Juncos
-- **Put a better description in communicated Interfaces** -> Juncos
 
  
 
@@ -488,7 +486,7 @@ In  this day and age, customer support is extremely important for any company.  
 
     - #### 14.3.3 Communication Interfaces
 
-        JSON, messaging system sns sqs
+        For communicating between the Amazon services, Amazon SQS will be used, as queuing service, wich can easily help us move information between AWS. SQS uses JSON as a way of interpreting data, therefore, JSON will be the way data moves within our application.
 
 - ### 14.4 Quality Attributes
     - #### 14.4.1. Usability
@@ -667,10 +665,7 @@ version 2
 
 - #### 19.7 Testing Environment
 
-    Misma Vesion
-    Mismo vocabulario
-    Explicar como debe de ser formateado el input y el output 
-
+    As mentioned in Testing Requirements (19.3), all testers need personal computers with similar hardware specifications, certain RAM space and the same software version. The input and output format will also be included as comments within the code, as diferent data types may be needed for specific procedures.
 
 - #### 19.8 Testing Results
 
@@ -683,8 +678,10 @@ version 2
 - #### 19.10 Appendix
 
 ### 20. Endings
-    It is not possible to conclude anything by now since the implementation have not been started. However what should be analyzed is the performance of each developed component and its results. 
-    Even though we can not conclude anything, we expect the best based on our solution and our thorough description of it.
+
+It is not possible to conclude anything by now since the implementation have not been started. However what should be analyzed is the performance of each developed component and its results. 
+Even though we can not conclude anything, we expect the best based on our solution and our thorough description of it.
+
 ### 21. Glossary of Term and Acronyms
 
 - #### Front-end
