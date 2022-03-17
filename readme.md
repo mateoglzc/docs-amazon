@@ -381,7 +381,7 @@ In  this day and age, customer support is extremely important for any company.  
 
 - ### 14.2 Data Requirements
     - #### 14.2.1 Logical Data Model
-    ![Class diagram with components](./Diagrams/diagrama_clases.png)
+        ![Class diagram with components](./Diagrams/diagrama_clases.png)
     - #### 14.2.2 Data Dictionary
 
         | AUDIO | --- |
@@ -416,23 +416,28 @@ In  this day and age, customer support is extremely important for any company.  
 
 
     - #### 14.2.3 Reports
+
+        [Technical Revision](./Diagrams/Technical%20Revision%20Template.pdf)
+    
+        [Inspection](./Diagrams/Inspection%20Revision%20Template.pdf)
+
     - #### 14.2.4 Data Acquisition, Integrity, Retention, and Disposal
 
 
-    Data is going to be aquired through our application integration with various Amazon AWS Services such as: Amazon Connect, Amazon DynamoDB, Amazon Amplify, and many others. As estated above our application is divided in various components in which the data is going to be distributed. 
-    
-    
-    
-   Data retention is identified as the service that keeps and stores safely certain information for a specified period of time. This service is very useful for businesses that have for example, a database where they store information of their clients throughout time and as a result businesses can analyze that data later on. It is important to specify that the storage of the information has to be stored according to the laws and regulations of the government as well as the industry sector.
+        Data is going to be aquired through our application integration with various Amazon AWS Services such as: Amazon Connect, Amazon DynamoDB, Amazon Amplify, and many others. As estated above our application is divided in various components in which the data is going to be distributed. 
+        
+        
+        
+        Data retention is identified as the service that keeps and stores safely certain information for a specified period of time. This service is very useful for businesses that have for example, a database where they store information of their clients throughout time and as a result businesses can analyze that data later on. It is important to specify that the storage of the information has to be stored according to the laws and regulations of the government as well as the industry sector.
 
-    The decision of which data is going to be usable in the future is very important because if companies store too much unnecesary information there is a risk that the costs increase, to have less efficiency because the data is not filtered correctly and the security of the data might be in danger.
+        The decision of which data is going to be usable in the future is very important because if companies store too much unnecesary information there is a risk that the costs increase, to have less efficiency because the data is not filtered correctly and the security of the data might be in danger.
 
-    It is imperative that every project that uses data retention, has data retention policies in which it says how the business is going to use the data that will be stores, if the data is protected and how, if the storage and data are secure and according to the law and how the data will be disposed after the limit time has passed.
-    
-   In other side, the necessary techniques to protect the app's data disposal are:
+        It is imperative that every project that uses data retention, has data retention policies in which it says how the business is going to use the data that will be stores, if the data is protected and how, if the storage and data are secure and according to the law and how the data will be disposed after the limit time has passed.
+        
+        In other side, the necessary techniques to protect the app's data disposal are:
 
-- Clearing: Clearing removes data in such a way that prevents an end-user from easily recovering it. This method is suitable for reusing devices inside your organization.
-- Digital Shredding or Wiping: This method does not alter the physical asset. Instead, it overwrites data with other characters like 1 or 0 and random characters with multiple passes (e.g. DoD 5220.22-M algorithm).
+        - Clearing: Clearing removes data in such a way that prevents an end-user from easily recovering it. This method is suitable for reusing devices inside your organization.
+        - Digital Shredding or Wiping: This method does not alter the physical asset. Instead, it overwrites data with other characters like 1 or 0 and random characters with multiple passes (e.g. DoD 5220.22-M algorithm).
 
 
 - ### 14.3 External Interface Requirements
@@ -517,59 +522,12 @@ The chosen architecture for this project is the Layers Architecture, which will 
 Thanks to this architecture, it will be easier to develop our web application with a Model-View-Controller pattern allowing the implementation of a system of components with the desired frameworks. 
 
 ### 18. Implementation Plan
-version 1
-| ID                           | Name of Activity/Component                              | Description and notes                                                                 | Responsible                                     | Initial Date | End Date   | Dependencies   |
-| ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------ | ---------- | -------------- |
-| 1.1                          | Capture of business requirements                        | Remote session with Amazon  to capture business requirements                          | Every team member                               | 16/02/22     | 17/02/22   |                |
-| 1.2                          | Business Requirements Revision with Amazon              | Remote session with Amazon  to ask final questions about the business requirements    | Carolina Ortega                                 | 23/02/22     | 23/02/22   | 1.1            |
-| 1.3                          | Business Requirements Revision with Advisors (teachers) | Session with teachers to correct details                                              | Every team member                               | 7/03/22      | 11/03/22   | 1.1      |
-
-
-**Presentation Tier Implementation (Front-end)**
-
-
-| ID                           | Name of Activity/Component                              | Description and notes                                                                 | Responsible                                     | Initial Date | End Date   | Dependencies   |
-| ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------ | ---------- | -------------- |
-| 2.1                          | User Interface Design                                   | Proposal design of app interfaces and navigation with Canva                           | Sebastián Juncos                                | 22/02/2022   | 22/02/22   | 1.3            |
-| 2.2                          | Start page interface                                    | Implementation of Start page interface                                                | Carolina Ortega                                 | 22/03/2022   | 28/03/2022 |                |
-| 2.3                          | Start/Stop and Save Recording component                 | Implementation of the screen recording tool with Angular                              | Matías Méndez                                   | 22/03/2022   | 08/04/22   |                |
-| 2.3                          | Admin interface to add video information                | Implementation of interface to edit the information of the stored videos with Angular | Ximena González                                 | 22/03/22     | 08/04/22   |                |
-| 2.5                          | Integration of all the components                       | Integration of all of the front-end components                                        | Every team member                               | 31/03/22     | 14/04/22   | 2.2 , 2.3,2.4  |
-| 2.6                          | Front-end testing                                       | Test all of the interface components                                                  | Mateo Gónzalez                                  | 14/04/22     | 18/04/22   | 2.5            |
-| 2.6                          | Team meeting                                            | Team meeting to discuss advances and areas of opportunity                             | Every team member                               | 6/04/22      | 6/04/22    |                |
-
-**Data Tier Implementation**
-
-| ID                           | Name of Activity/Component                              | Description and notes                                                                 | Responsible                                     | Initial Date | End Date   | Dependencies   |
-| ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------ | ---------- | -------------- |
-| 3.1                          | Database planning and design                            | Identify the required tables, relations, and columns for the database                 | Every team member                               | 22/03/22     | 23/03/22   |                |
-| 3.2                          | Database implementation                                 | Implement the design of the database with the desired language and server             | Carolina Ortega, Matías Méndez, Ximena Gonzalez | 24/03/22     | 29/03/22   | 3.1            |
-| 3.3                          | Database Testing                                        | Test the functionality of the database with the appropriate tools                     | Mateo Gonzalez and Sebastián Juncos             | 30/03/22     | 2/04/22    | 3.2            |
-| 3.4                          | Team meeting                                            | Team meeting to discuss advances and areas of opportunity                             | Every team member                               | 6/04/22      | 6/04/22    |                |
-
 
 **Back-end Tier Implementation**
 
-| ID                           | Name of Activity/Component                              | Description and notes                                                                 | Responsible                                     | Initial Date | End Date   | Dependencies   |
-| ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------ | ---------- | -------------- |
-| 4.1                          | API                                                     | API to connect the Front-end interaction with the database                            | Every team member                               | 19/04/22     | 25/04/22   | 3.3, 2.5       |
-| 4.2                          | API Testing                                             | Test the functionality of the API with the appropriate tools                          | Mateo Gonzalez and Sebastián Juncos             | 26/04/22     | 30/04/22   | 4.1            |
-| 4.3                          | Team meeting                                            | Team meeting to discuss advances and areas of opportunity                             | Every team member                               | 31/04/22     | 31/04/22   | 4.2            |
 
-**Final stage**
-
-| ID                           | Name of Activity/Component                              | Description and notes                                                                 | Responsible                                     | Initial Date | End Date   | Dependencies   |
-| ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------ | ---------- | -------------- |
-| 5.1                          | Complete integration of the application                 | Complete integration of backend, frontend and database.                               | Every team member | 01/05/22     | 10/05/22   | 4.1, 3.2, 2.5 |
-| 5.2                          | Testing of the complete application                     | Testing of all the components of the application                                      | Every team member | 11/05/22     | 20/05/22   | 5.1            |
-| 5.3                          | Final software revision                                 | Final software revision and correction with advisors and Amazon if possible           | Every team member                               | 21/05/22     | 30/05/22   | 5.1 , 5.2      |
-| 5.4                          | Team meeting                                            | Team meeting to discuss advances and areas of opportunity                             | Every team member                               | 31/05/22     | 31/05/22   |                |
-| 5.5                          | Final presentation                                      | Final presentation with Amazon                                                        | Every team member                               | 3/06/22      | 3/06/22    |          |
-
-version 2
-|     id     | Name                             | Description                                                                   | Start date | End date | Dependencies |
+|     ID     | Name                             | Description                                                                   | Start date | End date | Dependencies |
 |:----------:|----------------------------------|-------------------------------------------------------------------------------|------------|----------|--------------|
-|  Back end  |                                  |                                                                               |            |          |              |
 | 1          | Get recording data               |                                                                               |            |          |              |
 | 1.1        | Start screen recording           | Start recording using Amazon Chime                                            | 1st week   | 3rd week | 1.3          |
 | 1.2        | Stop recording when call ends    | Stop Amazon Chime and store S3 URL of both recordings (video, audio)          | 1st week   | 3rd week | 1.3, 1.1     |
@@ -584,7 +542,12 @@ version 2
 | 4          | Make available for administrator |                                                                               |            |          |              |
 | 4.1        | Make database get request        | Make get request to load all videos on dashboard                              | 7th week   | 9th week |              |
 | 4.2        | Send user to video               | Make a get request to get S3 video URL, then do post request to display video | 7th week   | 9th week | 4.1          |
-| Front end  |                                  |                                                                               |            |          |              |
+
+**Presentation Tier Implementation (Front-end)**
+
+
+|     ID     | Name                             | Description                                                                   | Start date | End date | Dependencies |
+|:----------:|----------------------------------|-------------------------------------------------------------------------------|------------|----------|--------------|
 | 5          | End call                         |                                                                               |            |          |              |
 | 5.1        | Display alert on browser         | Show a page where the agent can select the topic the call was about           | 3rd week   | 3rd week |              |
 | 5.2        | Show upload complete             | Display a message that the call data was uploaded to the database             | 3rd week   | 3rd week | 5.1          |
@@ -690,7 +653,7 @@ version 2
 
 - #### 19.10 Appendix
 
-    [Business Meetings Recaps] (https://docs.google.com/document/d/1YVaDb1OCT77fJ3wEzoixPjSeQdUWo7MZLTo0cw4uvn8/edit?usp=sharing)
+    [Business Meetings Recaps](https://docs.google.com/document/d/1YVaDb1OCT77fJ3wEzoixPjSeQdUWo7MZLTo0cw4uvn8/edit?usp=sharing)
 
     [Technical Revision](./Diagrams/Technical%20Revision%20Template.pdf)
     
