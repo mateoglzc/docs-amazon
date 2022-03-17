@@ -22,9 +22,9 @@ Amazon & Tecnológico de Monterrey
 
 ## Content Table
 
-1. [Template Change History](#template-change-history)
-2. [General Project Information](#general-project-information)
-3. [Scope Statement](#scope-statement)
+1. [Template Change History](#1.template-change-history)
+2. [General Project Information](#2.general-project-information)
+3. [Scope Statement](#4.scope-statement)
 4. [Introduction](#introduction)
 5. [Description/Objectives](#description/objectives)
 6. [Governance Model](#governance-model)
