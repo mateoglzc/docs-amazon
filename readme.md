@@ -164,12 +164,13 @@ For the development of this project our sponsor, Amazon, has given us 600 dollar
     - Experience making friendly UI
     - Experience developing web applications
     - Experience hosting web services
+    - Time spent planning the development of our project 
+    - Complete test plan
 - #### Weaknesses
     - No Amazon API or Amazon services knowledge
     - Never managed a team this big
 - #### Opportunities
     - Ability to use Amazon API's and services to facilitate development
-    - Code Review
     - Amazon support and supervision
 - #### Threats
     - Poor communication with Amazon
